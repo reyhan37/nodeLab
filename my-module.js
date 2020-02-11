@@ -7,8 +7,8 @@ quotes = [
     "That is Jesus, the son of Mary - the word of truth about which they are in dispute. It is not befitting for Allah to take a son; exalted is He! When He decrees an affair, He only says to it, 'Be,' and it is. (Jesus said), 'And indeed, Allah is my Lord and your Lord, so worship Him. That is a straight path.' [19:34-6]"
 ];
 
-var randomVerse = quotes[Math.floor(Math.random()*quotes.length)];
-
-module.exports = {
-    randomVerse
+function randomVerse() {
+    return quotes[Math.floor(Math.random()*quotes.length)];
 }
+
+module.exports = randomVerse;
